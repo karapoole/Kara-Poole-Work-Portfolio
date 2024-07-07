@@ -2,6 +2,7 @@
   --light-blue: #79d0d6;
   --dark-blue: #214e77;
   --blue-grey: #e8e8ec;
+  --dark-grey: #2a2a2c;
 }
 
 * {
@@ -12,8 +13,6 @@
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap;
   background-color: var(--blue-grey);
 }
 
@@ -31,11 +30,22 @@ li {
   list-style-type: none;
 }
 
+.banner {
+  background-image: url(./images/chevron-background.png);
+  background-size: cover;
+  background-position: center;
+  text-align: right;
+  min-width: 100%;
+  min-height: 200px;
+  background-color: var(--dark-grey);
+}
+
 .main-header {
   display: flex;
   justify-content: space-between;
-  background: #2a2a2c;
+  background: var(--dark-grey);
 }
+
 .about-me,
 .work,
 .contact-me {
