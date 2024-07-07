@@ -16,18 +16,31 @@ main {
   background-color: var(--blue-grey);
 }
 
-h2,
-p {
-  margin: 15px;
-}
-
 body {
   margin: 0px;
+  padding: 0px;
 }
 
 li {
   display: inline;
   list-style-type: none;
+}
+
+h1 {
+  margin-top: 0px;
+}
+
+.name-header {
+  display: flex;
+  justify-content: space-between;
+  background: var(--dark-grey);
+  margin-bottom: 0;
+}
+
+.about-me,
+.work,
+.contact-me {
+  display: flex;
 }
 
 .banner {
@@ -40,37 +53,26 @@ li {
   background-color: var(--dark-grey);
 }
 
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  background: var(--dark-grey);
-}
-
-.about-me,
-.work,
-.contact-me {
-  display: flex;
-}
-
 .about-me-heading,
 .work-heading,
 .contact-me-heading {
-  display: flex;
-  flex-wrap: wrap;
   border-right: solid var(--dark-blue) 5px;
   min-width: 300px;
   text-align: right;
-  font-size: large;
-  margin-left: 5%;
+  font-size: xx-large;
+  margin: 25px 50px 25px 0px;
+  padding: 0px 10px 0px 0px;
 }
 
 .about-me-text {
   display: inline;
+  margin: 25px 50px 25px 0px;
 }
 
 .work-projects {
   display: flex;
   flex-wrap: wrap-reverse;
+  margin: 25px 50px 25px 0px;
 }
 
 .project {
@@ -82,7 +84,7 @@ li {
   border-style: solid;
   border-width: 5px;
   border-color: var(--light-blue);
-  margin: 10px;
+  margin: 10px 10px 10px 0px;
   padding: 200px 0px 0px 0px;
   min-width: 400px;
   min-height: 170px;
@@ -93,7 +95,12 @@ li {
   background-color: var(--light-blue);
 }
 
+.contact-me-links {
+  margin: 25px 50px 25px 0px;
+}
+
 .footer {
   display: flex;
   flex-wrap: wrap;
+  margin: 25px 50px 25px 0px;
 }
