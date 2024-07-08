@@ -32,6 +32,7 @@ li a {
   font-weight: 500;
 }
 
+/* font color changes with cursor hover */
 li a:hover {
   font-size: 16px;
   color: rgb(16, 72, 72);
@@ -44,9 +45,6 @@ h1 {
 }
 
 header {
-  /* distributes list items from nav into rows */
-  border: 2px solid blueviolet;
-  /* puts space between main header element and nav links */
   background: var(--dark-grey);
 }
 
@@ -61,17 +59,6 @@ nav {
 .work,
 .contact-me {
   display: flex;
-}
-
-/* places and sizes blue chevron pattern under main header */
-.banner {
-  background-image: url(./images/chevron-background.png);
-  background-size: cover;
-  background-position: center;
-  text-align: right;
-  min-width: 100%;
-  min-height: 200px;
-  background-color: var(--dark-grey);
 }
 
 .about-me-heading,
@@ -96,7 +83,7 @@ nav {
   margin: 25px 50px 25px 0px;
 }
 
-/* reverses flex order of "project cards" so that the largest card is on top*/
+/* reverses flex order of "project cards" so that the largest card is on first*/
 .work-projects {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -131,15 +118,55 @@ nav {
 
 /* unsure of what to put in footer */
 .footer {
+  background-color: var(--blue-grey);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   header {
     min-width: 20vw;
     min-height: 20vh;
+    text-align: center;
   }
-  nav {
-    flex-direction: row;
-    justify-content: flex-end;
+
+  p {
+    margin: 10%;
+  }
+
+  /* changes section and section content from rows to column */
+  .about-me,
+  .work,
+  .contact-me {
+    display: block;
+  }
+
+  .about-me-heading,
+  .work-heading,
+  .contact-me-heading {
+    /* removes border lines */
+    border-right: none;
+    /* centers and sizes text of section titles */
+    text-align: center;
+    font-size: x-large;
+    margin: 0%;
+    padding: 5%;
+  }
+
+  .work-projects {
+    margin: 10%;
+  }
+
+  .project {
+    flex: 1 0 0;
+    background-image: url("./images/coming-soon-5.png");
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--light-blue);
+    margin: 10px 10px 10px 0px;
+    padding: 200px 0px 0px 0px;
+    min-width: 300px;
+    min-height: 70px;
   }
 }
