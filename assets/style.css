@@ -30,6 +30,7 @@ ul {
 /* dispalys list items in a row */
 li {
   display: inline;
+  /* removes bullets from list items */
   list-style-type: none;
 }
 
@@ -57,11 +58,10 @@ header {
   font-size: x-large;
 }
 
+/* removes white margin from below nav, algins items center */
 nav {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 /* allows for section title and section to appear side by side in rows */
@@ -100,8 +100,24 @@ nav {
   margin: 25px 50px 25px 0px;
 }
 
-/* creates "project cards" */
-.project {
+/* creates larger project 1 card */
+.project1 {
+  flex: 1 0 0;
+  background-image: url("./images/coming-soon-5.png");
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--light-blue);
+  margin: 10px 10px 10px 0px;
+  padding: 200px 0px 0px 0px;
+  min-width: 600px;
+  min-height: 170px;
+}
+
+/* creates smaller cards 1 and 2 */
+.project2 {
   flex: 1 0 0;
   background-image: url("./images/coming-soon-5.png");
   background-size: cover;
@@ -176,13 +192,19 @@ nav {
     margin: 0px;
   }
 
-  /* add margin around  */
+  /* adds margin around "project cards" */
   .work-projects {
     margin: 10%;
   }
 
-  /* makes "project cards" smaller for smaller screen */
-  .project {
+  /* makes project card 1 smaller for smaller screen */
+  .project1 {
+    min-width: 300px;
+    min-height: 70px;
+  }
+
+  /* makes project card 1 smaller for smaller screen */
+  .project2 {
     min-width: 300px;
     min-height: 70px;
   }
