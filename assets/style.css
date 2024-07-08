@@ -16,6 +16,7 @@
 main {
   background-color: var(--blue-grey);
 }
+
 /* prevents white margin from appearing around entire page */
 body {
   margin: 0px;
@@ -46,6 +47,7 @@ h1 {
 
 header {
   background: var(--dark-grey);
+  text-align: center;
 }
 
 nav {
@@ -54,6 +56,10 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
+.avatar {
+}
+
 /* allows for section title and section to appear side by side in rows */
 .about-me,
 .work,
@@ -83,13 +89,14 @@ nav {
   margin: 25px 50px 25px 0px;
 }
 
-/* reverses flex order of "project cards" so that the largest card is on first*/
+/* reverses flex order of "project cards" so that the largest card is first */
 .work-projects {
   display: flex;
   flex-wrap: wrap-reverse;
   margin: 25px 50px 25px 0px;
 }
 
+/* creates "project cards" */
 .project {
   flex: 1 0 0;
   background-image: url("./images/coming-soon-5.png");
@@ -105,7 +112,7 @@ nav {
   min-height: 170px;
 }
 
-/* creates colored box around project title and info */
+/* creates colored box around project title and info in "project cards" */
 .box-project-title {
   width: 175px;
   background-color: var(--light-blue);
@@ -132,7 +139,7 @@ nav {
     margin: 10%;
   }
 
-  /* changes section and section content from rows to column */
+  /* changes sections and section content from rows to column */
   .about-me,
   .work,
   .contact-me {
@@ -146,26 +153,22 @@ nav {
     border-right: none;
     /* centers and sizes text of section titles */
     text-align: center;
-    font-size: x-large;
     margin: 0%;
     padding: 5%;
   }
 
+  /* elminates white margin caused by h1 */
+  .work-heading {
+    margin: 0px;
+  }
+
+  /* add margin around  */
   .work-projects {
     margin: 10%;
   }
 
+  /*  */
   .project {
-    flex: 1 0 0;
-    background-image: url("./images/coming-soon-5.png");
-    background-size: cover;
-    background-position: center;
-    text-align: left;
-    border-style: solid;
-    border-width: 5px;
-    border-color: var(--light-blue);
-    margin: 10px 10px 10px 0px;
-    padding: 200px 0px 0px 0px;
     min-width: 300px;
     min-height: 70px;
   }
