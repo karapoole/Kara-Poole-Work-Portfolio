@@ -197,13 +197,13 @@ nav {
     margin: 10%;
   }
 
-  /* makes project card 1 smaller for smaller screen */
+  /* makes project card 1 smaller for smaller screens */
   .project1 {
     min-width: 300px;
     min-height: 70px;
   }
 
-  /* makes project card 1 smaller for smaller screen */
+  /* makes project cards 2 and 3 smaller for smaller screens */
   .project2 {
     min-width: 300px;
     min-height: 70px;
