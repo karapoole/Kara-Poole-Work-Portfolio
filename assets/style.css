@@ -5,6 +5,7 @@
   --dark-grey: #2a2a2c;
 }
 
+/* formats font style for entire page */
 * {
   box-sizing: border-box;
   font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Regular",
@@ -15,10 +16,9 @@
 main {
   background-color: var(--blue-grey);
 }
-
+/* prevents white margin from appearing around entire page */
 body {
   margin: 0px;
-  padding: 0px;
 }
 
 li {
@@ -26,23 +26,44 @@ li {
   list-style-type: none;
 }
 
+li a {
+  font-size: 16px;
+  color: cyan;
+  font-weight: 500;
+}
+
+li a:hover {
+  font-size: 16px;
+  color: rgb(16, 72, 72);
+  font-weight: 700;
+}
+
+/* elminates automatic top margin in level 1 header */
 h1 {
   margin-top: 0px;
 }
 
-.name-header {
-  display: flex;
-  justify-content: space-between;
+header {
+  /* distributes list items from nav into rows */
+  border: 2px solid blueviolet;
+  /* puts space between main header element and nav links */
   background: var(--dark-grey);
-  margin-bottom: 0;
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* allows for section title and section to appear side by side in rows */
 .about-me,
 .work,
 .contact-me {
   display: flex;
 }
 
+/* places and sizes blue chevron pattern under main header */
 .banner {
   background-image: url(./images/chevron-background.png);
   background-size: cover;
@@ -56,19 +77,26 @@ h1 {
 .about-me-heading,
 .work-heading,
 .contact-me-heading {
+  /* creates border lines to the right of section titles */
   border-right: solid var(--dark-blue) 5px;
+  /* min-width ensures border lines for each section align vertically */
   min-width: 300px;
+  /* right aligns and sizes text of section titles */
   text-align: right;
   font-size: xx-large;
+  /* creates space around section titles */
   margin: 25px 50px 25px 0px;
+  /* creates "breaks" in border line to the right of section titles */
   padding: 0px 10px 0px 0px;
 }
 
+/* aligns "about me" paragraph text to corresponding section title */
 .about-me-text {
   display: inline;
   margin: 25px 50px 25px 0px;
 }
 
+/* reverses flex order of "project cards" so that the largest card is on top*/
 .work-projects {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -90,17 +118,28 @@ h1 {
   min-height: 170px;
 }
 
+/* creates colored box around project title and info */
 .box-project-title {
   width: 175px;
   background-color: var(--light-blue);
 }
 
+/* aligns contact links with "contact me" section title */
 .contact-me-links {
   margin: 25px 50px 25px 0px;
 }
 
+/* unsure of what to put in footer */
 .footer {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 25px 50px 25px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    min-width: 20vw;
+    min-height: 20vh;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
