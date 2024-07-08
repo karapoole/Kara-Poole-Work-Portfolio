@@ -22,20 +22,26 @@ body {
   margin: 0px;
 }
 
+/* eliminates automatic padding in unordered list */
+ul {
+  padding: 0px;
+}
+
+/* dispalys list items in a row */
 li {
   display: inline;
   list-style-type: none;
 }
 
 li a {
-  font-size: 16px;
+  font-size: 20px;
   color: cyan;
   font-weight: 500;
 }
 
 /* font color changes with cursor hover */
 li a:hover {
-  font-size: 16px;
+  font-size: 22px;
   color: rgb(16, 72, 72);
   font-weight: 700;
 }
@@ -48,6 +54,7 @@ h1 {
 header {
   background: var(--dark-grey);
   text-align: center;
+  font-size: x-large;
 }
 
 nav {
@@ -55,9 +62,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.avatar {
 }
 
 /* allows for section title and section to appear side by side in rows */
@@ -139,6 +143,11 @@ nav {
     margin: 10%;
   }
 
+  li {
+    display: block;
+    list-style-type: none;
+  }
+
   /* changes sections and section content from rows to column */
   .about-me,
   .work,
@@ -153,8 +162,13 @@ nav {
     border-right: none;
     /* centers and sizes text of section titles */
     text-align: center;
-    margin: 0%;
-    padding: 5%;
+    /* elminates margin and padding */
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-me-heading {
+    padding-top: 5%;
   }
 
   /* elminates white margin caused by h1 */
@@ -167,9 +181,13 @@ nav {
     margin: 10%;
   }
 
-  /*  */
+  /* makes "project cards" smaller for smaller screen */
   .project {
     min-width: 300px;
     min-height: 70px;
+  }
+
+  .contact-me-links {
+    text-align: center;
   }
 }
