@@ -1,8 +1,8 @@
 :root {
   --light-blue: #79d0d6;
-  --dark-blue: #214e77;
+  --blue-black: #0d1e2d;
   --blue-grey: #e8e8ec;
-  --dark-grey: #2a2a2c;
+  --dark-grey: #b2b2b2;
 }
 
 /* formats font style for entire page */
@@ -10,7 +10,7 @@
   box-sizing: border-box;
   font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Regular",
     "Lucida Sans Unicode", Verdana, sans-serif;
-  color: var(--dark-blue);
+  color: var(--blue-black);
 }
 
 main {
@@ -36,7 +36,7 @@ li {
 
 li a {
   font-size: 20px;
-  color: cyan;
+  color: var(--blue-black);
   font-weight: 500;
 }
 
@@ -53,7 +53,7 @@ h1 {
 }
 
 header {
-  background: var(--dark-grey);
+  background: var(--light-blue);
   text-align: center;
   font-size: x-large;
 }
@@ -75,7 +75,7 @@ nav {
 .work-heading,
 .contact-me-heading {
   /* creates border lines to the right of section titles */
-  border-right: solid var(--dark-blue) 5px;
+  border-right: solid var(--blue-black) 5px;
   /* min-width ensures border lines for each section align vertically */
   min-width: 300px;
   /* right aligns and sizes text of section titles */
@@ -132,10 +132,16 @@ nav {
   min-height: 170px;
 }
 
-/* creates colored box around project title and info in "project cards" */
+/* creates colored box around project title in "project cards" */
 .box-project-title {
   width: 175px;
   background-color: var(--light-blue);
+}
+
+.box-project-title:hover {
+  font-size: 22px;
+  color: rgb(0, 255, 255);
+  font-weight: 700;
 }
 
 /* aligns contact links with "contact me" section title */
