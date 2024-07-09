@@ -2,7 +2,6 @@
   --light-blue: #79d0d6;
   --blue-black: #0d1e2d;
   --blue-grey: #e8e8ec;
-  --dark-grey: #b2b2b2;
 }
 
 /* formats font style for entire page */
@@ -103,7 +102,7 @@ nav {
 /* creates larger project 1 card */
 .project1 {
   flex: 1 0 0;
-  background-image: url("./images/coming-soon-5.png");
+  background-image: url(./images/coming-soon.png);
   background-size: cover;
   background-position: center;
   text-align: left;
@@ -119,7 +118,7 @@ nav {
 /* creates smaller cards 1 and 2 */
 .project2 {
   flex: 1 0 0;
-  background-image: url("./images/coming-soon-5.png");
+  background-image: url("./images/coming-soon.png");
   background-size: cover;
   background-position: center;
   text-align: left;
@@ -157,8 +156,9 @@ nav {
   margin: 25px 50px 25px 0px;
 }
 
+/* elminates white margin at bottom of page */
 .footer {
-  background-color: var(--blue-grey);
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
