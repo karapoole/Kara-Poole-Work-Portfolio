@@ -138,7 +138,15 @@ nav {
   background-color: var(--light-blue);
 }
 
-.box-project-title:hover {
+/* styles displayed on cursor hover over project card 1*/
+.project1:hover {
+  font-size: 22px;
+  color: rgb(0, 255, 255);
+  font-weight: 700;
+}
+
+/* styles displayed on cursor hover over project cards 2 and 3 */
+.project2:hover {
   font-size: 22px;
   color: rgb(0, 255, 255);
   font-weight: 700;
@@ -149,7 +157,6 @@ nav {
   margin: 25px 50px 25px 0px;
 }
 
-/* unsure of what to put in footer */
 .footer {
   background-color: var(--blue-grey);
 }
@@ -214,8 +221,9 @@ nav {
     min-width: 300px;
     min-height: 70px;
   }
-
+  /* centers contact links */
   .contact-me-links {
     text-align: center;
+    margin-left: 9%;
   }
 }
