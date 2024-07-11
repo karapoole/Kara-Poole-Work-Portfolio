@@ -1,19 +1,47 @@
-# module-2-challenge-kp
+# <Kara-Poole-Project-Portfolio>
 
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+## Description
 
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
+The main purpose of this project was to create a portfolio website to display personal projects and applications to future potential employers. A personal avatar was included at the top of the page. Beneath this is a navigation bar with jump links to different sections of the portfolio. This includes an “About Me” section, a collection of work, and contact information.
+
+The work section includes clickable images that are hyperlinked to those projects. Project photos were formatted so that the first project on the webpage is the largest. Please note that at the time of the creation of this website, placeholder images were linked to placeholder “dummy” repositories in lieu of actual projects and deployed applications. Real projects and applications will be added as they are created.
+
+External links were styled with a “hover” function so that style formatting changes in response to a cursor hover. A flexbox was utilized for the work section so that the images would be responsive to window resizing. Additionally, a media query was added so that the website would reformat to fit on smaller device screens like smartphones and tablets.
+
+## Table of Contents
+
+If your README is long, add a table of contents to make it easy for users to find what they need.
+
+- [Usage](#usage)
+- [Application](#application)
+- [Credits](#credits)
+- [License](#license)
+
+## Usage
+
+#### Project photos were formatted so that the first project on the webpage is the largest
+
+![alt text](./assets/images/work-project-1-large.png)
+
+#### External links were styled with a "hover" function
+
+Font size in the navigation bar, contact links, and project cards increase on a cursor hover.
+![alt text](./assets/images/nav-bar-links-hover.png)
+![alt text](./assets/images/contact-links-hover.png)
+![alt text](./assets/images/project-cards-hover.png)
+
+#### Media Query for formatting on smaller screens
+
+![alt text](./assets/images/media-query-formatting.png)
+
+## Application
+
+#### Deployed Appliation URL:
+
+#### Screen Shot:
+
+## Credits
+
+## Liscense
+
+Please refer to the liscense in the repo.
