@@ -38,9 +38,15 @@ Font size in the navigation bar, contact links, and project cards increase on a 
 
 #### Deployed Appliation URL:
 
+https://karapoole.github.io/Kara-Poole-Work-Portfolio/
+
 #### Screen Shot:
 
+![alt text](./assets/images/deployed-application.png)
+
 ## Credits
+
+edX Curriculum
 
 ## Liscense
 
